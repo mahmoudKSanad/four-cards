@@ -53,8 +53,33 @@ main {
 main article {
   color: var(--Grey-500);
   background-color: var(--White);
-  border-radius: 0.8em;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  padding: 1em;
+  border-radius: 0.5em;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 2em;
 }
-main article
+main article.supervisor {
+  border-top: 0.2em solid var(--Cyan);
+}
+main article.team-builder {
+  border-top: 0.2em solid var(--Red);
+}
+main article.karma {
+  border-top: 0.2em solid var(--Orange);
+}
+main article.calculater {
+  border-top: 0.2em solid var(--Blue);
+}
+
+main article h4 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+main article p {
+  margin: 0.5em 0;
+  font-size: 0.8em;
+}
+main article img {
+  margin:  1.5em 0 0;
+  margin-left: 70%;
+
+}
