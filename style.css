@@ -1,0 +1,60 @@
+:root {
+  --Red: hsl(0, 78%, 62%);
+  --Cyan: hsl(180, 62%, 55%);
+  --Orange: hsl(34, 97%, 64%);
+  --Blue: hsl(212, 86%, 64%);
+  --Grey-500: hsl(234, 12%, 34%);
+  --Grey-400: hsl(212, 6%, 44%);
+  --White: hsl(0, 0%, 100%);
+}
+
+body {
+  font-size: 15px;
+}
+* {
+  font-family: 'Poppins';
+  box-sizing: border-box;
+}
+.container {
+  background-color: var(--White);
+  height: 100vh;
+  padding: 2em;
+}
+
+header {
+  text-align: center;
+  color: var(--Grey-500);
+  margin: 1em 0;
+}
+header h2 {
+  margin: 0em;
+  padding: 0;
+}
+header .head {
+  font-weight: 200;
+}
+header h2:not(.head) {
+  font-weight: 600;
+}
+
+header p {
+  margin: 1em 0;
+  color: var(--Grey-400);
+  text-align: center;
+}
+
+main {
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  gap: 2em;
+  padding: 1em;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+main article {
+  color: var(--Grey-500);
+  background-color: var(--White);
+  border-radius: 0.8em;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 1em;
+}
+main article
